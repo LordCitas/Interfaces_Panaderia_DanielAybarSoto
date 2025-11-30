@@ -56,7 +56,7 @@ nav img{
     justify-content: space-between;
     align-items: center;
     font-size: 2rem;
-    box-shadow: 0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 0 20px 5px rgb(255, 255, 255);
 }
 
 #presentacion h1{
@@ -101,7 +101,6 @@ nav img{
 
 #productos>div{
     background: linear-gradient(to bottom,#5d1616,#280a0a);
-    
 }
 
 
