@@ -8,11 +8,10 @@ header{
     position: sticky;
     top: 0;
     height: 10vh;
-    background-color: rgb(37, 37, 37);
+    background: linear-gradient(to bottom,#5d1616,#280a0a);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 4%;
     z-index: 99;
 }
 
@@ -23,9 +22,12 @@ nav{
     justify-content: space-between;
 }
 
-nav li{
-    color: brown;
+nav a{
+    color: #b36632
+;
     list-style: none;
+    text-decoration: none;
+
 }
 
 nav ul{
@@ -36,5 +38,71 @@ nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: brown;
 }
+
+nav img{
+    height: 80%;
+    margin-top: 10px;
+}
+
+#presentacion{
+    height: 60vh;
+    width: 100%;
+    background-image: url("./img/fondoPanes.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+#presentacion h1{
+    margin-top: 20px;
+    filter: drop-shadow(0px 0px 10px goldenrod);
+}
+
+.textoBlanco{
+    color: white;
+}
+
+.fondoNegro{
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.837)70%);
+    width: 100%;
+    text-align: center;
+}
+
+.margenLados{
+    padding: 30px 10px;
+}
+
+.fuenteRetro{
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#productos{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./img/fondo.jpg");
+    padding: 20px 0;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#productos>div{
+    background: linear-gradient(to bottom,#5d1616,#280a0a);
+    
+}
+
+
+
