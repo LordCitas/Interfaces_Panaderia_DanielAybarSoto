@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="fuenteRetro">
+<body class="fuenteRetro" id="index">
     <header>
         <nav>
             <div>
@@ -23,9 +23,19 @@
         </nav>
     </header>
     <main>
-        <section id="presentacion" class="textoBlanco">
+        <section id="portada" class="textoBlanco">
             <h1>Horno San Miguel</h1>
             <p class="fondoNegro margenLados">~ Pan de verdad, cada mañana ~</p>
+        </section>
+
+        <section id="presentacion">
+            <div>
+                <img src="./img/horno.jpg" alt="Foto de panadería artesanal">
+                <div>
+                    <h2>Fundado en el año 1982...</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sunt optio dicta mollitia corrupti beatae at debitis voluptates eaque cupiditate iure, deleniti numquam suscipit commodi ad sint ipsum magnam unde velit nam praesentium. Quisquam ipsam dolores impedit maiores debitis sapiente corrupti officia! Quisquam aliquam officiis, hic adipisci porro culpa vel!</p>
+                </div>
+            </div>
         </section>
 
         <section id="productos">
@@ -38,45 +48,119 @@
                 </div>
                 <div id="panes">
                     <div class="tarjetaPan">
-                        <div>
+                        <div class="fotoPan">
                             <img src="./img/baguette.avif">
                         </div>
                         <div class="bandaRoja">
                             <h3>Baguette</h3>
                             <p>0,99€</p>
                         </div>
-                        
                         <div class="descripcionPan">
                             <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
-                            <a class="boton">Comprar</a>
+                            <div class="alergenosComprar">
+                                <div class="alergenos">
+                                    <img src="./img/alergenos/huevo.svg">
+                                    <img src="./img/alergenos/gluten.svg">
+                                </div>
+                                <a class="boton">Comprar</a>
+                            </div>
                         </div>
                     </div>
                     <div class="tarjetaPan">
-                        <div>
-                            <img src="./img/baguette.avif">
+                        <div class="fotoPan">
+                            <img src="./img/hogaza.avif">
                         </div>
                         <div class="bandaRoja">
-                            <h3>Baguette</h3>
-                            <p>0,99€</p>
+                            <h3>Hogaza</h3>
+                            <p>3,99€</p>
                         </div>
-                        
                         <div class="descripcionPan">
                             <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
-                            <a class="boton">Comprar</a>
+                            <div class="alergenosComprar">
+                                <div class="alergenos">
+                                    <img src="./img/alergenos/huevo.svg">
+                                    <img src="./img/alergenos/gluten.svg">
+                                </div>
+                                <a class="boton">Comprar</a>
+                            </div>
                         </div>
                     </div>
                     <div class="tarjetaPan">
-                        <div>
-                            <img src="./img/baguette.avif">
+                        <div class="fotoPan">
+                            <img src="./img/brioche.jpg">
                         </div>
                         <div class="bandaRoja">
-                            <h3>Baguette</h3>
-                            <p>0,99€</p>
+                            <h3>Brioche</h3>
+                            <p>2,50€</p>
                         </div>
-                        
                         <div class="descripcionPan">
                             <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
-                            <a class="boton">Comprar</a>
+                            <div class="alergenosComprar">
+                                <div class="alergenos">
+                                    <img src="./img/alergenos/huevo.svg">
+                                    <img src="./img/alergenos/gluten.svg">
+                                </div>
+                                <a class="boton">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjetaPan">
+                        <div class="fotoPan">
+                            <img src="./img/integral.jpg">
+                        </div>
+                        <div class="bandaRoja">
+                            <h3>Integral</h3>
+                            <p>2,00€</p>
+                        </div>
+                        <div class="descripcionPan">
+                            <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
+                            <div class="alergenosComprar">
+                                <div class="alergenos">
+                                    <img src="./img/alergenos/huevo.svg">
+                                    <img src="./img/alergenos/gluten.svg">
+                                </div>
+                                <a class="boton">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="tarjetaPan">
+                        <div class="fotoPan">
+                            <img src="./img/semillas.jpg">
+                        </div>
+                        <div class="bandaRoja">
+                            <h3>Semillas</h3>
+                            <p>3,00€</p>
+                        </div>
+                        <div class="descripcionPan">
+                            <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
+                            <div class="alergenosComprar">
+                                <div class="alergenos">
+                                    <img src="./img/alergenos/huevo.svg">
+                                    <img src="./img/alergenos/gluten.svg">
+                                </div>
+                                <a class="boton">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaPan">
+                        <div class="fotoPan">
+                            <img src="./img/rosca.jpg">
+                        </div>
+                        <div class="bandaRoja">
+                            <h3>Rosca</h3>
+                            <p>2,00€</p>
+                        </div>
+                        <div class="descripcionPan">
+                            <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
+                            <div class="alergenosComprar">
+                                <div class="alergenos">
+                                    <img src="./img/alergenos/huevo.svg">
+                                    <img src="./img/alergenos/gluten.svg">
+                                </div>
+                                <a class="boton">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
