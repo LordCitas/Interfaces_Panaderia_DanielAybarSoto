@@ -13,12 +13,12 @@
     <header>
         <nav>
             <div>
-                <a href="./index.html" id="logonav"><img src="./img/logoHorizontalsinFondo.png"></a>
+                <a href="./index.html" class="logo"><img src="./img/logoHorizontalsinFondo.png" alt="logo del nav"></a>
             </div>
             <ul>
-                <li><a href="./productos.html" class="textoNaranja">White</a></li>
-                <li><a href="./historia.html" class="textoNaranja">Blue</a></li>
-                <li><a href="./contacto.html" class="textoNaranja">Black</a></li>
+                <li><a href="./productos.html" class="textoNaranja">Productos</a></li>
+                <li><a href="./historia.html" class="textoNaranja">Historia</a></li>
+                <li><a href="./contacto.html" class="textoNaranja">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -28,19 +28,16 @@
             <p class="fondoNegro margenLados">~ Pan de verdad, cada mañana ~</p>
         </section>
 
-        <section id="presentacion">
-            <div>
-                <img src="./img/horno.jpg" alt="Foto de panadería artesanal">
-                <div>
-                    <h2>Fundado en el año 1982...</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sunt optio dicta mollitia corrupti beatae at debitis voluptates eaque cupiditate iure, deleniti numquam suscipit commodi ad sint ipsum magnam unde velit nam praesentium. Quisquam ipsam dolores impedit maiores debitis sapiente corrupti officia! Quisquam aliquam officiis, hic adipisci porro culpa vel!</p>
-                </div>
-            </div>
-        </section>
+        
 
         <section id="productos">
             <div class="contenedor textoBlanco">
                 <h2>Nuestra producción diaria:</h2>
+                <div class="avisoHorario">
+                    <img src="./img/aviso.png" alt="icono de aviso">
+                    <h3 class="avisoHorario">Horneamos de madrugada, puede haber variaciones</h3>
+                </div>
+                
                 <div class="contenedorBlanco flex">
                     <a href="./detalle.html" class="boton" id="seleccionado">Panes</a>
                     <a href="./detalle.html" class="boton">Bollería</a>
@@ -49,124 +46,146 @@
                 <div id="panes">
                     <div class="tarjetaPan">
                         <div class="fotoPan">
-                            <img src="./img/baguette.avif">
+                            <img src="./img/baguette.avif" alt="imagen de baguette">
                         </div>
                         <div class="bandaRoja">
                             <h3>Baguette</h3>
-                            <p>0,99€</p>
+                            <p class="textoNaranja">0,99€</p>
                         </div>
                         <div class="descripcionPan">
-                            <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
+                            <p class="textoMarron">El clásico pan francés de corteza crujiente y miga aireada. Es ideal para bocadillos o para mojar en aceite de oliva en el aperitivo.</p>
                             <div class="alergenosComprar">
                                 <div class="alergenos">
-                                    <img src="./img/alergenos/huevo.svg">
-                                    <img src="./img/alergenos/gluten.svg">
+                                    <img src="./img/alergenos/gluten.svg" alt="icono de alérgeno de gluten">
                                 </div>
-                                <a class="boton">Comprar</a>
+                                <a class="boton" href="#">Comprar</a>
                             </div>
                         </div>
                     </div>
                     <div class="tarjetaPan">
                         <div class="fotoPan">
-                            <img src="./img/hogaza.avif">
+                            <img src="./img/hogaza.avif" alt="imagen de hogaza">
                         </div>
                         <div class="bandaRoja">
                             <h3>Hogaza</h3>
-                            <p>3,99€</p>
+                            <p class="textoNaranja">3,99€</p>
                         </div>
                         <div class="descripcionPan">
-                            <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
+                            <p class="textoMarron">Pan rústico de miga densa y corteza gruesa. Perfecto para acompañar comidas o hacer rebanadas de pan tostado con tomate.</p>
                             <div class="alergenosComprar">
                                 <div class="alergenos">
-                                    <img src="./img/alergenos/huevo.svg">
-                                    <img src="./img/alergenos/gluten.svg">
+                                    <img src="./img/alergenos/gluten.svg" alt="icono de alérgeno de gluten">
                                 </div>
-                                <a class="boton">Comprar</a>
+                                <a class="boton" href="#">Comprar</a>
                             </div>
                         </div>
                     </div>
                     <div class="tarjetaPan">
                         <div class="fotoPan">
-                            <img src="./img/brioche.jpg">
+                            <img src="./img/brioche.jpg" alt="imagen de brioche">
                         </div>
                         <div class="bandaRoja">
                             <h3>Brioche</h3>
-                            <p>2,50€</p>
+                            <p class="textoNaranja">2,50€</p>
                         </div>
                         <div class="descripcionPan">
-                            <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
+                            <p class="textoMarron">Pan dulce, muy tierno y esponjoso, enriquecido con mantequilla y huevo. Ideal para el desayuno o la merienda con mermelada o crema.</p>
                             <div class="alergenosComprar">
                                 <div class="alergenos">
-                                    <img src="./img/alergenos/huevo.svg">
-                                    <img src="./img/alergenos/gluten.svg">
+                                    <img src="./img/alergenos/gluten.svg" alt="icono de alérgeno de gluten">
+                                    <img src="./img/alergenos/huevo.svg"  alt="icono de alérgeno de huevo">
+                                    <img src="./img/alergenos/sesamo.svg"  alt="icono de alérgeno de sésamo">
                                 </div>
-                                <a class="boton">Comprar</a>
+                                <a class="boton" href="#">Comprar</a>
                             </div>
                         </div>
                     </div>
                     
                     <div class="tarjetaPan">
                         <div class="fotoPan">
-                            <img src="./img/integral.jpg">
+                            <img src="./img/integral.jpg" alt="imagen de pan integral">
                         </div>
                         <div class="bandaRoja">
                             <h3>Integral</h3>
-                            <p>2,00€</p>
+                            <p class="textoNaranja">2,00€</p>
                         </div>
                         <div class="descripcionPan">
-                            <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
+                            <p class="textoMarron">Nutritivo y denso, elaborado con harina de grano completo. Excelente base para tostadas o sándwiches saludables con verduras.</p>
                             <div class="alergenosComprar">
                                 <div class="alergenos">
-                                    <img src="./img/alergenos/huevo.svg">
-                                    <img src="./img/alergenos/gluten.svg">
+                                    <img src="./img/alergenos/gluten.svg" alt="icono de alérgeno de gluten">
+                                    <img src="./img/alergenos/sesamo.svg"  alt="icono de alérgeno de sésamo">
+                                    <img src="./img/alergenos/frutoSeco.svg"  alt="icono de alérgeno de frutos secos">
                                 </div>
-                                <a class="boton">Comprar</a>
+                                <a class="boton" href="#">Comprar</a>
                             </div>
                         </div>
                     </div>
                    
                     <div class="tarjetaPan">
                         <div class="fotoPan">
-                            <img src="./img/semillas.jpg">
+                            <img src="./img/semillas.jpg" alt="imagen de pan de semillas">
                         </div>
                         <div class="bandaRoja">
                             <h3>Semillas</h3>
-                            <p>3,00€</p>
+                            <p class="textoNaranja">3,00€</p>
                         </div>
                         <div class="descripcionPan">
-                            <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
+                            <p class="textoMarron">De textura crujiente y sabor potente gracias a su selección de semillas. Marida muy bien con quesos frescos o para acompañar ensaladas.</p>
                             <div class="alergenosComprar">
                                 <div class="alergenos">
-                                    <img src="./img/alergenos/huevo.svg">
-                                    <img src="./img/alergenos/gluten.svg">
+                                    <img src="./img/alergenos/gluten.svg" alt="icono de alérgeno de gluten">
+                                    <img src="./img/alergenos/sesamo.svg">
+                                    <img src="./img/alergenos/frutoSeco.svg"  alt="icono de alérgeno de frutos secos">
                                 </div>
-                                <a class="boton">Comprar</a>
+                                <a class="boton" href="#">Comprar</a>
                             </div>
                         </div>
                     </div>
                     <div class="tarjetaPan">
                         <div class="fotoPan">
-                            <img src="./img/rosca.jpg">
+                            <img src="./img/rosca.jpg" alt="imagen de rosca">
                         </div>
                         <div class="bandaRoja">
                             <h3>Rosca</h3>
-                            <p>2,00€</p>
+                            <p class="textoNaranja">2,00€</p>
                         </div>
                         <div class="descripcionPan">
-                            <p class="textoNaranja">Clásico pan francés de corteza crujiente y miga aireada.</p>
+                            <p class="textoMarron">Pan redondo con un agujero central y miga suave. Ideal para ocasiones especiales o para rellenar con embutidos en celebraciones.</p>
                             <div class="alergenosComprar">
                                 <div class="alergenos">
-                                    <img src="./img/alergenos/huevo.svg">
-                                    <img src="./img/alergenos/gluten.svg">
+                                    <img src="./img/alergenos/gluten.svg" alt="icono de alérgeno de gluten">
                                 </div>
-                                <a class="boton">Comprar</a>
+                                <a class="boton" href="#">Comprar</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="presentacion">
+            <div>
+                <img src="./img/horno.jpg" alt="Foto de horno antiguo">
+                <div>
+                    <h2 class="textoNaranja">Fundado en el año 1982...</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sunt optio dicta mollitia corrupti beatae at debitis voluptates eaque cupiditate iure, deleniti numquam suscipit commodi ad sint ipsum magnam unde velit nam praesentium. Quisquam ipsam dolores impedit maiores debitis sapiente corrupti officia! Quisquam aliquam officiis, hic adipisci porro culpa vel!</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2 class="textoNaranja">Fundado en el año 1982...</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cumque ipsam consequuntur at est laborum obcaecati nostrum omnis odit adipisci quod, neque illum. Nisi, totam quas qui veritatis sapiente pariatur.</p>
+                    <a href="#" class="boton">Encuéntranos</a>
+                </div>
+                <img src="./img/obradorNuevo.png" alt="Foto de panadería artesanal">
+            </div>
+        </section>
     </main>
-    
+    <footer>
+        <p>Todos los derechos reservados</p>
+        <a href="./index.html" class="logo"><img src="./img/logo.png" alt="logo del nav"></a>
+        <p>Hecho por Daniel Aybar Soto</p>
+    </footer>
 </body>
 </html>
