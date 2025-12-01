@@ -62,7 +62,7 @@ nav ul{
 }
 
 nav a{
-    
+
 }
 
 .logo img{
@@ -162,11 +162,11 @@ footer>a>img{
 }
 
 .textoBlanco{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .textoMarron{
-    color: #b36632;
+    color: rgb(179, 102, 50);
 }
 
 .textoNaranja{
@@ -219,7 +219,7 @@ footer>a>img{
     font-size: 1.2rem;
     margin: 0 auto 20px auto;
     padding: 5px 10px;
-    background-color: #5d1616;
+    background-color: rgb(93, 22, 22);
     border-radius: 50px;
 }
 
@@ -504,18 +504,6 @@ footer>a>img{
     flex-wrap: wrap;
 }
 
-#cantidadCompra>.boton{
-    background-color: #b36632;
-    color: white;
-    transition: transform  0.2s;
-}
-
-#cantidadCompra>.boton:hover{
-    background-color: white;
-    color: #b36632;
-    transform: scale(1.1);
-}
-
 .contador{
     display: flex;
     align-items: center;
@@ -536,6 +524,7 @@ footer>a>img{
 
 .masPequenia{
     font-size: 1.2rem;
+    font-weight:lighter;
 }
 
 #formulario{
