@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="fuenteRetro fondo" id="contacto">
+    <header>
+        <nav>
+            <div>
+                <a href="./index.html" class="logo"><img src="./img/logoHorizontalsinFondo.png" alt="logo del nav"></a>
+            </div>
+            <ul>
+                <li><a href="index.html#productos" class="textoNaranja">Productos</a></li>
+                <li><a href="index.html#presentacion" class="textoNaranja">Historia</a></li>
+                <li><a href="contacto.html" class="textoNaranja">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <img src="./img/mapa.png" alt="imagen de la ubicación del obrador">
+            <div id="textoContacto">
+                <h1 class="etiqueta textoNaranja">Encuéntranos en:</h1>
+                <h2 class="etiqueta textoNaranja">El obrador: <span class="masPequenia textoBlanco">Pl. Mayor 8, 28000</span></h2>
+                <h2 class="etiqueta textoNaranja">Horarios: <span class="masPequenia textoBlanco">L–V 7:00–14:30 / 17:30–20:00. S 7:30–14:30</span></h2>
+                <h2 class="etiqueta textoNaranja">Teléfono: <span class="masPequenia textoBlanco">+34 123 456 789</span></h2>
+                <form action="./registro" method="post">
+                    <fieldset id="formulario">
+                        <legend class="etiqueta masPequenia textoBlanco">O mándanos un correo</legend>
+                        <div>
+                            <div>
+                                <label for="nombre">Nombre:</label>
+                                <input id="nombre" name="nombre" type="text" placeholder="Nombre" required>
+                            </div>
+                            <div>
+                                <label for="email">Correo electrónico:</label>
+                                <input id="email" name="email" type="email" placeholder="usuario@ejemplo.com" required>
+                            </div>
+                        </div>
+                        <div>
+                            <textarea id="mensaje" name="mensaje" rows="4" cols="80" placeholder="Escribe tu mensaje aquí"></textarea>
+                            <button type="submit">Enviar</button>
+                        </div>
+                        
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main> 
+    <footer>
+        <p>Todos los derechos reservados</p>
+        <a href="./index.html" class="logo"><img src="./img/logo.png" alt="logo del nav"></a>
+        <p>Hecho por Daniel Aybar Soto</p>
+    </footer>
+</body>
+</html>

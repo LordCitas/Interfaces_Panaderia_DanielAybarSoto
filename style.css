@@ -4,7 +4,25 @@
     box-sizing: border-box;
 }
 
-#index{
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgba(37, 37, 37);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #dec3b3de;
+    border-radius: 50px;
+    transition: transform .3s;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 171, 53);
+}
+
+.fondo{
     background-image: url("./img/fondo.jpg");
 }
 
@@ -12,7 +30,7 @@ header{
     position: sticky;
     top: 0;
     height: 10vh;
-    background: linear-gradient(to bottom,#5d1616,#280a0a);
+    background: linear-gradient(to bottom,#5d1616,#030101);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -45,6 +63,78 @@ nav ul{
 .logo img{
     height: 70%;
     margin-top: 5%;
+}
+
+footer{
+    height: 10vh;
+    padding: 0 5%;
+    background-color: #b36632;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    bottom: 0;
+}
+
+footer>a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer>a>img{
+    height: 100%;
+}
+
+.siguiente{
+    position: fixed;
+    top: 460px;
+    right: 19px;
+    color: white;
+    font-size: 1.5em;
+    z-index: 99;
+    text-decoration: none;
+    padding: 1.5% 0.9%;
+    background-color: #c4681e;
+    border-radius: 10px;
+    font-weight: 1000;
+    box-shadow: 0px 0px 20px 0px rgb(22, 22, 22);
+}
+
+.siguiente:hover{
+    background-color: rgba(255, 122, 14);
+    border-radius: 10px;
+    font-weight: 1000;
+    text-decoration: none;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.614);
+}
+
+.anterior{
+    position: fixed;
+    top: 460px;
+    left: 19px;
+    color: white;
+    font-size: 1.5em;
+    z-index: 99;
+    text-decoration: none;
+    padding: 1.5% 0.9%;
+    background-color: #c4681e;
+    border-radius: 10px;
+    font-weight: 1000;
+    box-shadow: 0px 0px 20px 0px rgb(22, 22, 22);
+}
+
+.anterior:hover{
+    background-color: rgba(255, 122, 14);
+    border-radius: 10px;
+    font-weight: 1000;
+    text-decoration: none;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.614);
 }
 
 #portada{
@@ -324,26 +414,200 @@ nav ul{
     transform: scale(1.1);
 }
 
-footer{
-    height: 15vh;
-    padding: 0 5%;
+.pan>main, #contacto>main{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;;
+}
+
+.pan .contenedor, #contacto .contenedor{
+    height: 70vh;
+    margin: 5vh auto;
+    width: 80%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 30px 0px rgb(22, 22, 22);;
+}
+
+.pan .contenedor img, #contacto .contenedor img{
+    height: 99%;
+    width: 49%;
+    padding: 1% 0 1% 1%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    object-fit: cover;
+}
+
+#baguette img, #hogaza img{
+    object-position: left top;
+}
+
+#brioche img{
+    object-position: center top;
+}
+
+#textoPan, #textoContacto{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#textoPan h1, #textoContacto h1{
+    font-size:3em;
+    position: relative;
+}
+
+.pan .alergenos img{
+    width: 30px;
+    height: 30px;
+}
+
+.pan .alergenos p{
+    margin: 0 10px;
+}
+
+#coleccion{
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 40px;
+}
+
+#textoPan>p, #textoContacto>p{
+    margin: 10px 40px;
+    font-size: 1.2rem;
+}
+
+.etiqueta{
+    padding: 5px 20px 5px 40px;
+    background-color: #5d1616;
+    border-bottom-right-radius: 30px;
+    margin: 10px 0;
+    width: fit-content;
+}
+
+#cantidadCompra{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#cantidadCompra>.boton{
     background-color: #b36632;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: white;
-    font-size: 1.5rem;
+    transition: transform  0.2s;
 }
 
-footer>a{
-    height: 100%;
+#cantidadCompra>.boton:hover{
+    background-color: white;
+    color: #b36632;
+    transform: scale(1.1);
+}
+
+.contador{
     display: flex;
     align-items: center;
 }
 
-footer>a>img{
-    height: 100%;
+.contador .boton{
+    padding: 6px 20px;
+    margin: 5px;
 }
+
+#precio{
+    font-size: 3rem;
+    padding: 5px 20px;
+    background-color: white;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.masPequenia{
+    font-size: 1.2rem;
+}
+
+#formulario{
+    background-color: #b36632;
+    border-style: none;
+}
+
+#formulario>div{
+    padding: 0 5% 2% 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+#mensaje{
+    width: 100%;
+}
+
+#formulario button{
+    padding: 1% 5%;
+    margin: 1%;
+    
+}
+
+
+@media screen and (max-width: 1580px) {
+    .pan .contenedor, #contacto .contenedor{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .pan .contenedor img, #contacto .contenedor img{
+        height: 40%;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+        object-position: center;
+        padding: 0;
+    }
+
+    #textoPan, #textoContacto{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pan .alergenos img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #coleccion{
+        width: 90%;
+        max-width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 0 40px;
+    }
+
+
+    #cantidadCompra{
+        margin-bottom: 20px;
+    }
+
+    #formulario{
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+
 
 @media screen and (max-width: 1400px) {
     .tarjetaPan{
@@ -443,6 +707,10 @@ footer>a>img{
     footer{
         font-size: 1rem;
         text-align: center;
+    }
+
+    #contacto{
+        
     }
 }
 
